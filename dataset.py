@@ -7,7 +7,7 @@ import string
 MAX_LENGTH = 20
 
 class NameDataset:
-    def __init__(self, data_dir):
+    def __init__(self, data_dir="names"):
         self.all_letters = string.ascii_letters + " -'"
         self.n_letters = len(self.all_letters)
         self.names = []
