@@ -7,7 +7,7 @@ from dataset import NameDataset
 # Load dataset
 @st.cache_resource
 def load_dataset():
-    dataset = NameDataset(r"C:\Users\user\OneDrive\Desktop\Resources\Selected Topics in AI\Assignment1\names")
+    dataset = NameDataset("names")
     return dataset
 
 dataset = load_dataset()
@@ -40,7 +40,7 @@ def load_model():
         hidden_size=256,
         output_size=len(dataset.nationality_to_ix)
     )
-    model_path = r"C:\Users\user\OneDrive\Desktop\Resources\Selected Topics in AI\Assignment1\model.pth"
+    model_path = "model.pth"
     model.load_state_dict(torch.load(model_path, map_location=torch.device('cpu')))
     model.eval()
     return model
