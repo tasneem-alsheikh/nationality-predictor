@@ -1,6 +1,7 @@
 # 🌍 Nationality Predictor
 
-An AI-powered web application that predicts the nationality of a given name using a neural network. Built with PyTorch and Streamlit.
+An AI-powered web application that predicts the nationality of a given name using a neural network. Built with PyTorch and Streamlit.<br>
+To view the webapp click: https://nationality-predictor-rvgjrxblgsym6phhkuzyae.streamlit.app/
 
 ## 🚀 Features
 
